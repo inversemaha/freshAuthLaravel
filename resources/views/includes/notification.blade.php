@@ -107,13 +107,6 @@
                     </li>
                 </ul>
             </li>
-
-
-            <li>
-                <a href="/logout">
-                    <i class="fa fa-sign-out"></i> Log out
-                </a>
-            </li>
         </ul>
 
     </nav>
