@@ -45,7 +45,17 @@
             <li>
                 <a href="/admin-home"><i class="fa fa-diamond"></i> <span class="nav-label">Settings</span></a>
             </li>
+            <li>
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+               document.getElementById('logout-form').submit();">
+                    <i class="fa fa-sign-out"></i><span class="nav-label">Logout</span></a>
+                </a>
+            </li>
         </ul>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
 
     </div>
 </nav>
